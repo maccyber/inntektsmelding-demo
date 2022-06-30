@@ -9,6 +9,7 @@
 /.idea
 /out
 /lib
+/app/build
 /build
 *.iml
 *.ipr
