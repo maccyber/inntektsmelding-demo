@@ -1,1 +1,0 @@
-/home/maccyber/Projects/rr/app/src/test/kotlin/rr/AppTest.kt
