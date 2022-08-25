@@ -16,7 +16,7 @@ data class Inntektsmelding(
     val VirksomhetsInformasjon: VirksomhetsInformasjon?
 )
 
-class InntektsmeldingMediator(rapidsConnection: RapidsConnection) : River.PacketListener {
+class InntektsmeldingAkkumulator(rapidsConnection: RapidsConnection) : River.PacketListener {
     // Bør ha en map cache med TTL for å unngå at meldinger blir liggende
     val inntektsMeldinger: MutableMap<UUID, Inntektsmelding> = mutableMapOf()
 

@@ -20,6 +20,6 @@ fun main() {
     RapidApplication.create(environment.raw).apply {
         BrregLøser(this, BrregClient(httpClient, environment.brregUrl))
         AaregLøser(this, AaregClient(httpClient, environment.aaregUrl))
-        InntektsmeldingMediator(this)
+        InntektsmeldingAkkumulator(this)
     }.start()
 }
